@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_jogo_dado"
     android:layout_width="match_parent"
@@ -10,8 +11,41 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.com.cristiana.jogododado.JogoDadoActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:text="@string/app_jogador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dado"
+            android:id="@+id/imgJog" />
+
+        <TextView
+            android:text="@string/app_computador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dado"
+            android:id="@+id/imgComp" />
+
+        <Button
+            android:text="@string/app_jogar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnJogar"
+            android:onClick="jogar"/>
+    </LinearLayout>
 </RelativeLayout>
