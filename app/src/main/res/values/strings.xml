@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">JogoDoDado</string>
+    <string name="app_name">02-JogoDoDado</string>
+    <string name="app_jogador">Jogador</string>
+    <string name="app_computador">Computador</string>
+    <string name="app_jogar">Jogar</string>
+    <string name="app_jogador_ganhou">Jogador Ganhou!</string>
+    <string name="app_comp_ganhou">Computador Ganhou</string>
 </resources>
